@@ -16,4 +16,12 @@ let animals = [
     name: 'Guinea pig',
     awesomeLevel: 2,
   },
+  {
+    name: 'Rat',
+    awesomeLevel: 6,
+  },
+  {
+    name: 'Fish',
+    awesomeLevel: 4,
+  },
 ]
