@@ -49,6 +49,18 @@ let animals = [
 // Output:
     // An array of awesomeLevel where each object 
     // awesomeLevel property is above 7
-function findAwesomeItem(item){
-
+function findAwesomeItem(items){
+  let awesomeItems = [];
+  for(let item of animals){
+    if(item.awesomeLevel > 7){
+      awesomeItems.push(item);
+      console.log('Items in loop', awesomeItems);
+    }
+  }
+  // Return the items above 
+  return awesomeItems
 }
+
+// Document our expectation
+findAwesomeItem();
+console.log('Expect an array containing Cat and Dog objects!', findAwesomeItem());
